@@ -1,0 +1,9 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+data/*.txt
+data/*.gz
+data/*.zip
+data/raw/
+data/processed/

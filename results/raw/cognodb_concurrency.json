@@ -1,0 +1,38 @@
+[
+    {
+        "clients": 1,
+        "operations": 100,
+        "reads": 81,
+        "writes": 19,
+        "errors": 0,
+        "duration_seconds": 52.0855004,
+        "throughput_ops_per_sec": 1.9199201165781639,
+        "p50_ms": 509.36209999999704,
+        "p95_ms": 518.5053999999951,
+        "average_ms": 510.411622
+    },
+    {
+        "clients": 10,
+        "operations": 1000,
+        "reads": 794,
+        "writes": 206,
+        "errors": 0,
+        "duration_seconds": 53.96897880000001,
+        "throughput_ops_per_sec": 18.529162904968658,
+        "p50_ms": 501.62199999999757,
+        "p95_ms": 529.6617999999995,
+        "average_ms": 505.49070049999995
+    },
+    {
+        "clients": 40,
+        "operations": 4000,
+        "reads": 3194,
+        "writes": 806,
+        "errors": 0,
+        "duration_seconds": 69.47693819999999,
+        "throughput_ops_per_sec": 57.573060984428935,
+        "p50_ms": 640.7409999999913,
+        "p95_ms": 773.1673000000114,
+        "average_ms": 653.3483919999999
+    }
+]
