@@ -1,0 +1,13 @@
+{
+    "database": "neo4j",
+    "query": "degree aggregation by BenchmarkPerson",
+    "grouping_property": "BenchmarkPerson.id",
+    "relationship_type": "BENCHMARK_KNOWS",
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 49.11050000000028,
+    "p95_ms": 73.27439999999984,
+    "average_ms": 52.58488199999996,
+    "min_ms": 45.79619999999984,
+    "max_ms": 108.83170000000052
+}

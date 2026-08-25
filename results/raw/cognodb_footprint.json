@@ -1,0 +1,13 @@
+{
+    "database": "CognoDB",
+    "dataset": {
+        "nodes": 49683,
+        "relationships": 101027
+    },
+    "client": {
+        "client_memory_mb": 52.82,
+        "platform": "Windows-10-10.0.22631-SP0",
+        "python_version": "3.9.6",
+        "cpu_count": 8
+    }
+}

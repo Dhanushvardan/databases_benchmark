@@ -1,0 +1,24 @@
+{
+    "database": "neo4j",
+    "indexed_properties": [
+        "BenchmarkPerson.id"
+    ],
+    "point_lookup": {
+        "iterations": 100,
+        "warmup": 20,
+        "p50_ms": 6.755400000000078,
+        "p95_ms": 11.311699999999814,
+        "average_ms": 7.76726,
+        "min_ms": 4.225400000000157,
+        "max_ms": 54.15690000000018
+    },
+    "indexed_lookup": {
+        "iterations": 100,
+        "warmup": 20,
+        "p50_ms": 4.98569999999976,
+        "p95_ms": 6.350599999999762,
+        "average_ms": 5.147331000000008,
+        "min_ms": 3.763600000000089,
+        "max_ms": 14.170599999999922
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "edges": 100000,
+    "load_time_seconds": 2479.2985471,
+    "edges_per_second": 40.33398886833075,
+    "database": "Neo4j",
+    "dataset": "Pokec"
+}

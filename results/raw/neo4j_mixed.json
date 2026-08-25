@@ -1,0 +1,54 @@
+{
+    "database": "neo4j",
+    "read_write_mix_target": "80/20",
+    "results": [
+        {
+            "concurrency": 1,
+            "operations_per_client": 100,
+            "total_operations": 100,
+            "successful_operations": 100,
+            "errors": 0,
+            "reads": 79,
+            "writes": 21,
+            "read_percentage": 79.0,
+            "write_percentage": 21.0,
+            "elapsed_seconds": 1.0705478,
+            "throughput_ops_per_sec": 93.41012143502607,
+            "p50_ms": 8.407500000000123,
+            "p95_ms": 19.899600000000017,
+            "average_ms": 10.006813000000006
+        },
+        {
+            "concurrency": 10,
+            "operations_per_client": 100,
+            "total_operations": 1000,
+            "successful_operations": 1000,
+            "errors": 0,
+            "reads": 801,
+            "writes": 199,
+            "read_percentage": 80.10000000000001,
+            "write_percentage": 19.900000000000002,
+            "elapsed_seconds": 3.1710478,
+            "throughput_ops_per_sec": 315.35317758376266,
+            "p50_ms": 23.858999999999853,
+            "p95_ms": 61.618099999999565,
+            "average_ms": 29.294954299999993
+        },
+        {
+            "concurrency": 40,
+            "operations_per_client": 100,
+            "total_operations": 4000,
+            "successful_operations": 4000,
+            "errors": 0,
+            "reads": 3224,
+            "writes": 776,
+            "read_percentage": 80.60000000000001,
+            "write_percentage": 19.400000000000002,
+            "elapsed_seconds": 8.945362,
+            "throughput_ops_per_sec": 447.15909764188416,
+            "p50_ms": 78.0858000000002,
+            "p95_ms": 137.4050999999996,
+            "average_ms": 82.26178675
+        }
+    ]
+}
