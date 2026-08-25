@@ -3,7 +3,6 @@ import statistics
 
 
 def percentile(values, percentile):
-
     values = sorted(values)
 
     index = int(
@@ -25,10 +24,9 @@ def benchmark_traversal(
     warmup=20,
     iterations=100
 ):
-
-    # -------------------------
-    # Warm-up
-    # -------------------------
+    # =========================================================
+    # WARM-UP
+    # =========================================================
 
     for i in range(warmup):
 
@@ -41,9 +39,9 @@ def benchmark_traversal(
             hops
         )
 
-    # -------------------------
-    # Measurement
-    # -------------------------
+    # =========================================================
+    # MEASUREMENT
+    # =========================================================
 
     latencies = []
 
@@ -68,24 +66,33 @@ def benchmark_traversal(
             elapsed * 1000
         )
 
+    # =========================================================
+    # RESULTS
+    # =========================================================
+
     return {
         "hops": hops,
         "iterations": iterations,
         "warmup": warmup,
+
         "p50_ms": percentile(
             latencies,
             50
         ),
+
         "p95_ms": percentile(
             latencies,
             95
         ),
+
         "average_ms": statistics.mean(
             latencies
         ),
+
         "min_ms": min(
             latencies
         ),
+
         "max_ms": max(
             latencies
         )

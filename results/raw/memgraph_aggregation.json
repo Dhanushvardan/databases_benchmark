@@ -1,0 +1,13 @@
+{
+    "database": "memgraph",
+    "query": "degree aggregation by BenchmarkPerson",
+    "grouping_property": "BenchmarkPerson.id",
+    "relationship_type": "BENCHMARK_KNOWS",
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 34.53739999999983,
+    "p95_ms": 71.71050000000001,
+    "average_ms": 40.28459400000003,
+    "min_ms": 29.45650000000022,
+    "max_ms": 112.2945999999998
+}

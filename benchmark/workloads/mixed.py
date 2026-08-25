@@ -2,12 +2,13 @@ import random
 import time
 
 
-def run_mixed_operation(adapter, node_ids):
+def run_mixed_operation(
+    adapter,
+    node_ids,
+):
     """
-    Run one operation.
-
-    80% = read
-    20% = write
+    80% READ
+    20% WRITE
     """
 
     if random.random() < 0.8:
@@ -36,10 +37,10 @@ def run_mixed_operation(adapter, node_ids):
 def benchmark_mixed_worker(
     adapter,
     node_ids,
-    operations
+    operations,
 ):
-
     latencies = []
+
     reads = 0
     writes = 0
     errors = 0
@@ -57,12 +58,17 @@ def benchmark_mixed_worker(
 
             if operation_type == "read":
                 reads += 1
-            else:
+
+            elif operation_type == "write":
                 writes += 1
 
-        except Exception:
+        except Exception as exc:
 
             errors += 1
+
+            print(
+                f"Mixed operation failed: {exc}"
+            )
 
         elapsed = (
             time.perf_counter() - start
@@ -76,5 +82,5 @@ def benchmark_mixed_worker(
         "latencies": latencies,
         "reads": reads,
         "writes": writes,
-        "errors": errors
+        "errors": errors,
     }

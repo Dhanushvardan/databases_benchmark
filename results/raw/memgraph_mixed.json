@@ -1,0 +1,49 @@
+{
+    "database": "memgraph",
+    "workload": "80_percent_read_20_percent_write",
+    "node_count": 100,
+    "workloads": {
+        "1_clients": {
+            "clients": 1,
+            "operations_per_client": 100,
+            "total_operations": 100,
+            "successful_operations": 100,
+            "errors": 0,
+            "reads": 88,
+            "writes": 12,
+            "total_time_seconds": 0.5613982,
+            "throughput_ops_per_sec": 178.12668441045946,
+            "p50_ms": 2.265899999999932,
+            "p95_ms": 25.73749999999997,
+            "average_ms": 5.31012999999999
+        },
+        "10_clients": {
+            "clients": 10,
+            "operations_per_client": 100,
+            "total_operations": 1000,
+            "successful_operations": 1000,
+            "errors": 0,
+            "reads": 817,
+            "writes": 183,
+            "total_time_seconds": 4.1083261,
+            "throughput_ops_per_sec": 243.4081364670638,
+            "p50_ms": 4.703799999999925,
+            "p95_ms": 65.60860000000002,
+            "average_ms": 25.39224549999997
+        },
+        "40_clients": {
+            "clients": 40,
+            "operations_per_client": 100,
+            "total_operations": 4000,
+            "successful_operations": 4000,
+            "errors": 0,
+            "reads": 3159,
+            "writes": 841,
+            "total_time_seconds": 10.2863786,
+            "throughput_ops_per_sec": 388.8637736899942,
+            "p50_ms": 7.312599999998781,
+            "p95_ms": 70.78980000000001,
+            "average_ms": 62.656490650000094
+        }
+    }
+}

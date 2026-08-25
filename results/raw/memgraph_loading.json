@@ -1,0 +1,6 @@
+{
+    "edges": 100000,
+    "load_time_seconds": 1496.8341825,
+    "edges_per_second": 66.80766725475284,
+    "database": "Memgraph"
+}

@@ -1,0 +1,9 @@
+{
+    "database": "memgraph",
+    "nodes": 49683,
+    "relationships": 100919,
+    "client_memory_mb": 49.73828125,
+    "platform": "Windows-10-10.0.22631-SP0",
+    "python_version": "3.9.6",
+    "cpu_count": 8
+}

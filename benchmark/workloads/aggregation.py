@@ -3,7 +3,6 @@ import time
 
 
 def percentile(values, percentile):
-
     values = sorted(values)
 
     index = int(
@@ -23,12 +22,17 @@ def benchmark_aggregation(
     warmup=20,
     iterations=100
 ):
-
+    # ---------------------------------------------------------
     # Warm-up
+    # ---------------------------------------------------------
+
     for _ in range(warmup):
         adapter.aggregation()
 
+    # ---------------------------------------------------------
     # Measurement
+    # ---------------------------------------------------------
+
     latencies = []
 
     for _ in range(iterations):
@@ -38,27 +42,41 @@ def benchmark_aggregation(
         adapter.aggregation()
 
         elapsed = (
-            time.perf_counter() - start
+            time.perf_counter()
+            - start
         )
 
         latencies.append(
             elapsed * 1000
         )
 
+    # ---------------------------------------------------------
+    # Results
+    # ---------------------------------------------------------
+
     return {
         "iterations": iterations,
         "warmup": warmup,
+
         "p50_ms": percentile(
             latencies,
             50
         ),
+
         "p95_ms": percentile(
             latencies,
             95
         ),
+
         "average_ms": statistics.mean(
             latencies
         ),
-        "min_ms": min(latencies),
-        "max_ms": max(latencies)
+
+        "min_ms": min(
+            latencies
+        ),
+
+        "max_ms": max(
+            latencies
+        )
     }
