@@ -1,0 +1,7 @@
+{
+  "edges": 100000,
+  "load_time_seconds": 68.967,
+  "edges_per_second": 1449.97,
+  "database": "ArangoDB",
+  "dataset": "Pokec"
+}

@@ -1,0 +1,22 @@
+{
+  "database": "tigergraph",
+  "indexed_properties": ["BenchmarkPerson.id"],
+  "point_lookup": {
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 954.7145,
+    "p95_ms": 1899.5652,
+    "average_ms": 1012.84,
+    "min_ms": 941.27,
+    "max_ms": 1987.43
+  },
+  "indexed_lookup": {
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 951.28,
+    "p95_ms": 1907.64,
+    "average_ms": 1018.37,
+    "min_ms": 938.52,
+    "max_ms": 2012.86
+  }
+}

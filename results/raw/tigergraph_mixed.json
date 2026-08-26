@@ -1,0 +1,26 @@
+{
+  "database": "tigergraph",
+  "read_write_mix_target": "80/20",
+  "results": [
+    {
+      "concurrency": 1,
+      "operations_per_client": 100,
+      "total_operations": 100,
+      "throughput_ops_per_sec": 3.92
+    },
+    {
+      "concurrency": 10,
+      "operations_per_client": 100,
+      "total_operations": 1000,
+      "throughput_ops_per_sec": 39.3
+    },
+    {
+      "concurrency": 40,
+      "operations_per_client": 100,
+      "total_operations": 4000,
+      "throughput_ops_per_sec": 145.47,
+      "p50_ms": 237.63,
+      "p95_ms": 265.32
+    }
+  ]
+}

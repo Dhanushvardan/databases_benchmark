@@ -1,0 +1,13 @@
+{
+  "database": "arangodb",
+  "query": "degree aggregation by BenchmarkPerson",
+  "grouping_property": "BenchmarkPerson.id",
+  "relationship_type": "BENCHMARK_KNOWS",
+  "iterations": 100,
+  "warmup": 20,
+  "p50_ms": 276.38,
+  "p95_ms": 341.72,
+  "average_ms": 289.64,
+  "min_ms": 268.91,
+  "max_ms": 356.47
+}

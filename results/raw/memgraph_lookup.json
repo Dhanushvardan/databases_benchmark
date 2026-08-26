@@ -1,0 +1,22 @@
+{
+  "database": "memgraph",
+  "indexed_properties": ["BenchmarkPerson.id"],
+  "point_lookup": {
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 1.64,
+    "p95_ms": 3.52,
+    "average_ms": 1.99,
+    "min_ms": 1.21,
+    "max_ms": 8.46
+  },
+  "indexed_lookup": {
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 1.83,
+    "p95_ms": 5.3,
+    "average_ms": 2.37,
+    "min_ms": 1.19,
+    "max_ms": 9.61
+  }
+}

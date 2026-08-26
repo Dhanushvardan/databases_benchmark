@@ -1,0 +1,13 @@
+{
+  "database": "tigergraph",
+  "query": "degree aggregation by BenchmarkPerson",
+  "grouping_property": "BenchmarkPerson.id",
+  "relationship_type": "BENCHMARK_KNOWS",
+  "iterations": 100,
+  "warmup": 20,
+  "p50_ms": 264.76,
+  "p95_ms": 268.32,
+  "average_ms": 264.87,
+  "min_ms": 261.16,
+  "max_ms": 272.0
+}

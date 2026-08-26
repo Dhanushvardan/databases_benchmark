@@ -1,0 +1,13 @@
+{
+  "database": "TigerGraph",
+  "dataset": {
+    "nodes": 49683,
+    "relationships": 101069
+  },
+  "client": {
+    "client_memory_mb": 39.16,
+    "platform": "Windows-10-10.0.22631-SP0",
+    "python_version": "3.9.6",
+    "cpu_count": 8
+  }
+}

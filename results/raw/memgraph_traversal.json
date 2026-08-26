@@ -1,0 +1,32 @@
+[
+  {
+    "hops": 1,
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 35.81,
+    "p95_ms": 55.78,
+    "average_ms": 39.42,
+    "min_ms": 31.24,
+    "max_ms": 68.91
+  },
+  {
+    "hops": 2,
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 14.38,
+    "p95_ms": 15.81,
+    "average_ms": 14.72,
+    "min_ms": 13.21,
+    "max_ms": 19.87
+  },
+  {
+    "hops": 3,
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 5584.02,
+    "p95_ms": 6040.12,
+    "average_ms": 5576.31,
+    "min_ms": 5489.42,
+    "max_ms": 6127.84
+  }
+]

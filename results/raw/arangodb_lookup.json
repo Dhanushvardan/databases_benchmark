@@ -1,0 +1,22 @@
+{
+  "database": "arangodb",
+  "indexed_properties": ["BenchmarkPerson.id"],
+  "point_lookup": {
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 254.42,
+    "p95_ms": 302.68,
+    "average_ms": 278.55,
+    "min_ms": 251.31,
+    "max_ms": 315.82
+  },
+  "indexed_lookup": {
+    "iterations": 100,
+    "warmup": 20,
+    "p50_ms": 254.42,
+    "p95_ms": 302.68,
+    "average_ms": 278.55,
+    "min_ms": 251.31,
+    "max_ms": 315.82
+  }
+}

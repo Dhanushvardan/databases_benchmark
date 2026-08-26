@@ -1,0 +1,26 @@
+{
+  "database": "arangodb",
+  "read_write_mix_target": "80/20",
+  "results": [
+    {
+      "concurrency": 1,
+      "operations_per_client": 100,
+      "total_operations": 100,
+      "throughput_ops_per_sec": 3.08
+    },
+    {
+      "concurrency": 10,
+      "operations_per_client": 100,
+      "total_operations": 1000,
+      "throughput_ops_per_sec": 23.2
+    },
+    {
+      "concurrency": 40,
+      "operations_per_client": 100,
+      "total_operations": 4000,
+      "throughput_ops_per_sec": 85.07,
+      "p50_ms": 295.76,
+      "p95_ms": 936.17
+    }
+  ]
+}

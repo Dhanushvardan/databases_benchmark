@@ -1,0 +1,7 @@
+{
+  "edges": 100000,
+  "load_time_seconds": 71.141,
+  "edges_per_second": 1405.64,
+  "database": "TigerGraph",
+  "dataset": "Pokec"
+}
