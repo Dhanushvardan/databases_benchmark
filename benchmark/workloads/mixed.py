@@ -16,7 +16,9 @@ def run_mixed_operation(
         # READ
         node_id = random.choice(node_ids)
 
-        adapter.mixed_read(node_id)
+        adapter.mixed_read(
+            node_id
+        )
 
         return "read"
 
@@ -39,6 +41,7 @@ def benchmark_mixed_worker(
     node_ids,
     operations,
 ):
+
     latencies = []
 
     reads = 0
@@ -71,7 +74,8 @@ def benchmark_mixed_worker(
             )
 
         elapsed = (
-            time.perf_counter() - start
+            time.perf_counter()
+            - start
         )
 
         latencies.append(
